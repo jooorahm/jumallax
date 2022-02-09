@@ -1,0 +1,85 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pic1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pic1 {
+  background-image: url("pics/zoo.jpg");
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url("pics/tools.jpg");
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url("pics/work-shop.jpg");
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #362916;
+  color: rgb(212, 171, 117);
+}
+
+.section-dark {
+  background-color: #362913;
+  color: rgb(212, 171, 117);
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: rgb(37, 29, 23);
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 568px) {
+  .pic1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+}
